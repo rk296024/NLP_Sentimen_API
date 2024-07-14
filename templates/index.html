@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sentiment Prediction</title>
+    <script>
+        function submitForm() {
+            document.getElementById("prediction-form").submit();
+        }
+    </script>
+</head>
+<body>
+    <h1>Sentiment Prediction</h1>
+    <form id="prediction-form" action="/predict" method="post" onsubmit="submitForm()">
+        <label for="review">Enter your review:</label><br>
+        <textarea id="review" name="review" rows="4" cols="50"></textarea><br><br>
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
+
+
